@@ -22,7 +22,7 @@
     --blue: #2D7AC0;
     --white: #fff;
     --gray: #bec1bb;
-    --very-light-pink: #c7c7c7;
+    --very-light-pink: #eeeeee;
     --dark-jungle: #1b1f21;
     --outer-space: #444749;
 }
@@ -55,8 +55,8 @@ aside ul {
 
 aside ul li {
     font-family: 'Open Sans', sans-serif;
-    font-size: var(--small);
-    font-weight: lighter;
+    font-size: var(--x-small);
+    font-weight: normal;
     color: var(--outer-space);
     list-style: none;
     text-align: left;
@@ -79,13 +79,14 @@ footer {
     grid-area: footer;
     display: flex;
     align-items: center;
+    background-color: var(--blue);
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: var(--small);
     font-weight: lighter;
-    color: var(--dark-jungle);
+    color: var(--white);
     margin: 0px;
     width: 100%;
     text-align: center;
@@ -101,7 +102,7 @@ h3 {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 2fr 7fr;
-    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-rows: 0.5fr 8fr 0.5fr;
     grid-template-areas: 
     'navbar navbar navbar navbar'
     'aside main main main'
@@ -122,3 +123,62 @@ h3 {
     font-size: var(--medium);
     color: var(--dark-jungle);
 }
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 10px;
+    padding: 15px 15px;
+}
+
+.product-card {
+    width: 300px;
+    background-color: var(--white);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-details h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--medium);
+    color: var(--dark-jungle);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.product-details p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--small);
+    color: var(--blue);
+    text-align: center;
+}
+
+.product-bottom {
+    width: 100%;
+    height: 30px;
+    background-color: var(--blue);
+}
+
+.product-bottom a {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--small);
+    color: var(--white);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+} 
