@@ -39,6 +39,8 @@ body {
 nav {
     grid-area: navbar;
     background-color: var(--blue);
+    display: flex;
+    align-items: center;
 }
 
 aside {
@@ -70,4 +72,13 @@ footer {
     'navbar navbar navbar navbar'
     'aside main main main'
     'footer footer footer footer';
+}
+
+.nav-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--medium);
+    color: var(--white);
+    margin: 0px;
+    width: 100%;
+    text-align: center;
 }
