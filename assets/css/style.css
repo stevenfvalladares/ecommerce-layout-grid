@@ -55,6 +55,18 @@ section {
 
 footer {
     grid-area: footer;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--small);
+    font-weight: lighter;
+    color: var(--dark-jungle);
+    margin: 0px;
+    width: 100%;
+    text-align: center;
 }
 
 /*========================================*/
