@@ -19,9 +19,10 @@
     --medium: 16px;
     --large: 45px;
     /* colors */
-    --blue: #2980B9;
+    --blue: #2D7AC0;
     --white: #fff;
     --gray: #bec1bb;
+    --very-light-pink: #c7c7c7;
     --dark-jungle: #1b1f21;
     --outer-space: #444749;
 }
@@ -35,6 +36,38 @@ body {
     padding: 0;
 }
 
+nav {
+    grid-area: navbar;
+    background-color: var(--blue);
+}
+
+aside {
+    grid-area: aside;
+    background-color: var(--very-light-pink);
+}
+
+section {
+    grid-area: main;
+    background-color: var(--very-light-pink);
+}
+
+footer {
+    grid-area: footer;
+}
+
 /*========================================*/
 /*---------------- [_Class] -----===------*/
 /*========================================*/
+
+.grid-container {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'aside main main main'
+    'footer footer footer footer';
+}
