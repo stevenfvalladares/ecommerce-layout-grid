@@ -46,6 +46,28 @@ nav {
 aside {
     grid-area: aside;
     background-color: var(--very-light-pink);
+    padding-left: 20px;
+}
+
+aside ul {
+    padding-left: 0px;
+}
+
+aside ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--small);
+    font-weight: lighter;
+    color: var(--outer-space);
+    list-style: none;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    font-size: var(--small);
+    font-weight: lighter;
+    color: var(--dark-jungle);
 }
 
 section {
@@ -78,7 +100,7 @@ h3 {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: 2fr 7fr;
     grid-template-rows: 1fr 7fr 1fr;
     grid-template-areas: 
     'navbar navbar navbar navbar'
@@ -93,4 +115,10 @@ h3 {
     margin: 0px;
     width: 100%;
     text-align: center;
+}
+
+.aside-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--medium);
+    color: var(--dark-jungle);
 }
